@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Сайт розроблено студенткою Ашурковою Іриною, група ФІТ2-11 -->
+    <title>Бізнес кредитний калькулятор | Контакти</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Бізнес кредитний калькулятор</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contacts.html" class="active">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="contacts">
+            <h2>Наші контакти</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>Адреса</h3>
+                    <p>м. Київ, вул. Кіото 19, 123</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Телефон</h3>
+                    <p>+380 (044) 513-33-48</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Email</h3>
+                    <p>wueney0@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <h3>Години роботи</h3>
+                    <p>Пн-Пт: 9:00 - 18:00</p>
+                    <p>Сб-Нд: вихідний</p>
+                </div>
+            </div>
+            
+            <form id="contact-form">
+                <h3>Напишіть нам</h3>
+                <div class="form-group">
+                    <label for="name">Ваше ім'я:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Ваш Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Надіслати</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Бізнес кредитний калькулятор. Розроблено Ашуркова Ірина, група ФІТ-2-11</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

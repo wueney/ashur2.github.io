@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Сайт розроблено студенткою Ашурковою Іриною, група ФІТ2-11 -->
+    <title>Бізнес кредитний калькулятор | Головна</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Бізнес кредитний калькулятор</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="calculator">
+            <h2>Розрахуйте ваш бізнес кредит</h2>
+            <div class="calculator-form">
+                <div class="form-group">
+                    <label for="loan-amount">Сума кредиту (₴):</label>
+                    <input type="number" id="loan-amount" min="10000" max="10000000" value="100000">
+                </div>
+                <div class="form-group">
+                    <label for="loan-term">Термін кредиту (місяців):</label>
+                    <input type="number" id="loan-term" min="3" max="120" value="12">
+                </div>
+                <div class="form-group">
+                    <label for="interest-rate">Річна процентна ставка (%):</label>
+                    <input type="number" id="interest-rate" min="1" max="50" step="0.1" value="15">
+                </div>
+                <button id="calculate-btn">Розрахувати</button>
+            </div>
+
+            <div class="results" id="results" style="display: none;">
+                <h3>Результати розрахунку</h3>
+                <div class="result-item">
+                    <span>Щомісячний платіж:</span>
+                    <span id="monthly-payment">0 ₴</span>
+                </div>
+                <div class="result-item">
+                    <span>Загальна сума виплат:</span>
+                    <span id="total-payment">0 ₴</span>
+                </div>
+                <div class="result-item">
+                    <span>Переплата:</span>
+                    <span id="total-interest">0 ₴</span>
+                </div>
+                <div class="chart-container">
+                    <canvas id="loan-chart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="info">
+            <h2>Як це працює?</h2>
+            <p>Наш калькулятор використовує стандартну формулу аннуїтетного платежу для розрахунку щомісячних виплат за кредитом. Ви можете експериментувати з різними параметрами кредиту, щоб знайти оптимальні умови для вашого бізнесу.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Бізнес кредитний калькулятор. Розроблено Ашуркова Ірина, група ФІТ-2-11</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
